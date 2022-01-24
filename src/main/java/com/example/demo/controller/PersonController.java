@@ -36,7 +36,7 @@ public class PersonController {
         return personRepository.save(updatePerson);
     }
 
-    @DeleteMapping("/persons/{id}")
+    @DeleteMapping("/person/{id}")
     public void deletePerson(@PathVariable Long id){
         personRepository.deleteById(id);
     }
